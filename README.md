@@ -1,6 +1,10 @@
 # data-shell: Finder and bash sync
+<p align="center">
+<a href="https://youtu.be/pMAWjMS_rww">
+<img align="center" src="swc_shell_finder_demo.gif" width="100%" alt="Demo"/></a>
+</p>
 
-Custom material for [Software Carpentry](http://software-carpentry.org/) instructors (with a Mac!) for syncing a Finder window with the current working directory in `bash`. It also has other changes to `clear` and `PS1` useful for teaching the `shell-novice` lesson.
+Customised material for [Software Carpentry](http://software-carpentry.org/) instructors (with a Mac!) for syncing a Finder window with the current working directory in `bash`. It also has other changes to `clear` and `PS1` useful for teaching the `shell-novice` lesson.
 
 See this [video](https://youtu.be/pMAWjMS_rww) for a short demonstration.
 
@@ -19,7 +23,7 @@ source .bash_profile
 
 ## How
 
-Applescript is trigged by an alias of `cd` and run after a success.
+Finder New or changed filenames are built-in. The only trick is to use Applescript to change the directory. It is trigged by an alias of `cd` and run after a successful call:
 
 ```bash
 function set_finder_target () {
